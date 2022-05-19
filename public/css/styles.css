@@ -132,10 +132,12 @@ main{
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
+    box-sizing: border-box;
 }
 
 main section article img{
     width: 100%;
+    box-sizing: border-box;
 }
 
 main section article i,
@@ -144,12 +146,14 @@ main section article i,
 
 }
 
-main section article i{
+main section article i.fas{
     font-size: 16px;
     padding: 5px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
+    right: 20px;
+    
 }
 
 main section h3{
