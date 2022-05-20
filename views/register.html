@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="input">Buscar productos, marcas y más</div>
+                    <div class="submit"><i class="fa fa-search"></i></div>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+    
+            </nav>
+            <div class="burger-menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+        </header>
+        <section class="formulario-usuario">
+            <form action="/" method="POST">
+            <p>
+                <!-- campo para el nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id= "nombre">
+                
+            </p>
+
+            <p>
+                <!-- campo para el apellido -->
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id= "apellido">
+                
+            </p>
+            <p>
+                <!-- campo para el mail -->
+                <label for="email">e-mail:</label>
+                <input type="email" name="email" id= "email">
+
+            </p>
+            <p>
+                <!-- campo para el usuari@ -->
+                <label for="usuario">usuario:</label>
+                <input type="usuario" name="usuario" id= "usuario">
+
+            </p>
+            
+
+            <p>
+                <!-- campo para el fecha de nacimiento -->
+                <label for="fecha-de-nacimiento">fecha-de-nacimiento</label>
+                <input type="date" name="fecha" id= "fecha-de-nacimiento">
+
+            </p>
+            <p>
+                <!-- campo para el domicilio -->
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio" id= "domicilio">
+
+            </p>
+            <p>
+                <!-- campo para el perfil de usuario (comprar o vender) -->
+            <div class="perfil-de-usuario">
+                <label for="comprar">Comprá</label>
+                <input type="radio" name="medio" id= "comprar">
+                
+                <label for="vender">Vende</label>
+                <input type="radio" name="medio" id= "vender">
+
+            </div>
+
+            </p>
+            <p>
+                <!-- campo para categoria de interes -->
+            <div class="categorias-de-interes">
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="electro" id= "electro">
+                
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="moda" id= "moda">
+
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="hogar" id= "hogar">
+
+                <label for="jugueteria">Jugueteria</label>
+                <input type="checkbox" name="jugueteria" id= "jugueteria">
+
+                <label for="vida-sana">Vida sana</label>
+                <input type="checkbox" name="vida-sana" id= "vida-sana">
+
+            </div>
+
+            </p>
+            <p>
+                <!-- campo para foto de usuario -->
+                <label> Selecciona una imagen para tu foto de perfil </label>
+                <input type="file" name="avatar" accept=".jpg" multiple>
+
+            </p>
+           
+            <p>
+                <!-- campo para la contraseña -->
+                <label for="contraseña">Ingresá tu contraseña:</label>
+                <input type="password" name="password" id= "contraseña">
+
+            </p>
+            <p>
+                <!-- campo para confirmar la contraseña -->
+                <label for="contraseña">Reingresá tu contraseña:</label>
+                <input type="password" name="password" id= "contraseña">
+
+            </p>
+            <p>
+                <!-- campo para botton enviar -->
+                <button type="submit" value="Enviar"> Enviar </button>
+                
+            </p>
+            <p>
+                <!-- campo para botton borrar datos -->
+                <button type="reset" value="Borrar"> Borrar </button>
+
+            </p>
+            </form>
+        </section>
+  </body>
+</html>

@@ -79,6 +79,14 @@ header div p {
     text-align: center;
 }
 
+header .flex-contenedor-logo{
+    display: flex;
+    height: 50%;
+    align-items: center;
+
+
+}
+
 div section.menu-hamburguesa{
     text-align: center
 
@@ -184,6 +192,11 @@ main section article .description{
     display: inline-flex;
 }
 
+.productos article {
+    flex-wrap: wrap;
+    display: block
+}
+
 .fa-solid {  color: #1259c3};
 
 
@@ -211,17 +224,51 @@ footer {
     border: solid #ebebeb 5px;
 }
 
-@media (max-width: 361px){
+@media (min-width: 100px ){
     main section article .description{
        display: none;
-    }
+       }
 
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100)}
 
     header nav{
       display: none;
-            } 
+            } ;
+     .productos article {
+        flex-wrap: wrap;
+        display: block;
+        width: 95%;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+        
+}
+
+@media (max-width: 360px){
+    main section article .description{
+       display: none;
+       }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)}
+
+    header nav{
+      display: none;
+            } ;
+     .productos article {
+        flex-wrap: wrap;
+        display: block;
+        width: 95%;
+    }
+
+
 
         
 }
@@ -232,24 +279,67 @@ footer {
         visibility: hidden;
     }
     
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 80% auto;
+    }
     .productos{
         display: flex;
+        flex-wrap: wrap;
+        margin: 10px auto;
     }
     .productos article {
         width: 48%;
-        margin: 10px auto;
+        margin: 18px auto;
+        flex-wrap: wrap;
+        display: block
     }
+
+    }
+
+     main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+
 }
 
 
 @media (max-width: 769px){
-
+    main section div.products article{
+        width: 22%;
         
+}
 }
 
 
+@media (min-width: 769px){
+.productos{
+    display: flex;
+    flex-wrap: inherit;
+    margin: 10px auto;
+}
 
+.productos article {
+    width: 24%;
+    margin: 18px auto;
+    
+}
 
+}
 
 
 
