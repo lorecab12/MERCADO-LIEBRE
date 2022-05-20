@@ -102,6 +102,7 @@ div.burger-menu i{
 
 .price{
     font-size: 18px;
+    flex-grow: 0.3;
 }
 
 .discount,
@@ -135,6 +136,12 @@ main section article{
     box-sizing: border-box;
 }
 
+main section article .flex-contenedor{
+    display: flex;
+    padding: 10px 0px;
+
+}
+
 main section article img{
     width: 100%;
     box-sizing: border-box;
@@ -145,6 +152,9 @@ main section article i,
     color: #39b54a;
 
 }
+.discount{
+    flex-grow: 0.7;
+}
 
 main section article i.fas{
     font-size: 16px;
@@ -153,6 +163,9 @@ main section article i.fas{
     background-color: #FFF;
     border-radius: 50%;
     right: 20px;
+    display: block;
+    position: absolute;
+    top: -15px;
     
 }
 
@@ -164,43 +177,11 @@ article div.main-article{
     width: 93%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    position: relative;
 }
 
 main section article .description{
     display: inline-flex;
-}
-
-
-
-@media (max-width: 361px){
-    main section article .description{
-       display: none;
-    }
-
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100)}
-
-    header nav{
-      display: none;
-            } 
-
-        
-}
-
-        
-
-
-@media (max-width: 769px){
-
-        
-}
-
-@media (min-width: 361px){
-
-    div.burger-menu {
-        visibility: hidden;
-    }
-    
 }
 
 .fa-solid {  color: #1259c3};
@@ -229,6 +210,44 @@ footer {
     background-color: #fff;
     border: solid #ebebeb 5px;
 }
+
+@media (max-width: 361px){
+    main section article .description{
+       display: none;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)}
+
+    header nav{
+      display: none;
+            } 
+
+        
+}
+        
+@media (min-width: 361px){
+
+    div.burger-menu {
+        visibility: hidden;
+    }
+    
+    .productos{
+        display: flex;
+    }
+    .productos article {
+        width: 48%;
+        margin: 10px auto;
+    }
+}
+
+
+@media (max-width: 769px){
+
+        
+}
+
+
 
 
 
