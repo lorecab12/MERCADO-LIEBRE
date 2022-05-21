@@ -1,14 +1,15 @@
-const express = require ('express');
-const app = express ();
-const path = require ('path');
-const port = 3000
+const express = require('express');
+const app = express();
+app.use(express.static('public'));
 
-app.use(express.static(path.join (__dirname, 'public')));
 
-app.get ( '/', ( req , res) => { res.sendFile ( path.resolve ('./views/home.html'));});
-app.listen ( port , () => {console.log ('Servidor corriendo')});
+app.listen(3000, ()=>{
+    console.log('Servidor funcionando');
+});
 
-///app.listen(port, ()=>{console.log(`servidor corriendo en http://localhost:${port}`);});
+app.get('/', (req,res)=>{
+    res.sendFile(__dirname + '/views/home.html');
+});
 
 app.get('/register', (req, res)=> {
     
