@@ -17,7 +17,7 @@ p{
 }
 
 
-###HEADER
+
 header{
     background-color: #EAC926;
 }
@@ -121,26 +121,12 @@ header .navbar{
 }
 
 
-.price{
-    flex-grow: 0.3;
-    font-size: 18px;
-}
-
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
 
 h3,
 .description{
     color: #666;
 }
 
-.description{
-    display: none;
-    margin-top: 20px;
-}
 
 section.banner img{
     width: 100%;
@@ -151,67 +137,78 @@ main{
     width: 90%;
 }
 
-main section article{
+section .formulario-menu{
+    -webkit-align-items: center;
+    align-items: center;
     background-color: #fff;
-    box-sizing: border-box;    
-    margin: 10px 0px;
-}
-
-main section article .flex-contenedor{
+    -webkit-border-radius: 0.375em;
+    border-radius: 0.375em;
+    -webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    display: -webkit-flex;
     display: flex;
-    padding: 10px 0px;
-
-}
-
-main section article img{
-    box-sizing: border-box;
-    width: 100%;
-}
-
-main section article i,
-.discount{
-    color: #39b54a;
-
-}
-.discount{
-    flex-grow: 0.7;
-}
-
-main section article i.fas{
-    background-color: #FFF;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    display: block;
     font-size: 16px;
-    padding: 5px;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+    min-height: 48px;
+}
+
+form {
+    display: grid;
+}
+
+section .formulario-usuario{
+    padding: 10px;
+}
+
+section p.formulario-usuario {
+    display: flex;
+    padding: 9px;
+    }
     
+section p .nombre{
+    display: flex;
+    }
+section p .apellido{
+    display: flex;
+    }
+section p .mail{
+    display: flex;
+    }
+section p .usuario{
+    display: flex;
+    }
+section p .fecha-nacimiento{
+    display: flex;
+    }
+section p .domicilio{
+    display: flex;
+    }
+section p .perfil{
+    display: flex;
+    }
+section p .Intereses{
+    display: flex;
+    padding: 10px;
+    }   
+section p .foto{
+    display: flex;
+    padding: 10px;
+    }
+section p .contraseña{
+    display: flex;
+    padding: 10px;
+    }
+section p .confirmar-contraseña{
+    display: flex;
+    padding: 10px;
+    }
+section p .enviar-borrar{
+    display: flex;
+    padding: 10px;
+    }
+section .categorias-de-intereses {
+    padding: 10px;
+    display: flex;
 }
-
-main section h3{
-    margin: 20px 0px;
-}
-
-article div.main-article{
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    position: relative;
-    width: 93%;
-}
-
-main section article .description{
-    display: inline-flex;
-}
-
-.productos article {
-    display: block;
-    flex-wrap: wrap
-}
-
-///FOOTER
-
 
 footer {
     background-color: #fff;
@@ -242,50 +239,54 @@ section .copyright-bloque {
 
 
 
+
+
 @media (min-width: 100px ){
     main section article .description{
-        display: none;
-        }
- 
-     main section article{
-         box-shadow: 0px 0px 10px rgb(100, 100, 100)}
- 
-     header nav{
        display: none;
-             } ;
-      .productos article {
-         display: block;
-         flex-wrap: wrap;
-         width: 95%;
-     }
- 
-     header nav {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-     }
- 
-     header .flex-contenedor-logo{
-         align-items: center;
-         display: flex;
-         height: 50%;
-         flex-wrap: wrap;
-         align-items: center;
-         height: 70%;
-         width: 100%;
-         flex-grow: 0.5;
-         justify-content: flex-end;
-     
-     
-     }
- 
-     div.form {
-         font-size: 8px;
-         text-size-adjust: auto;
-         width: 49%; 
-         flex-grow: 100%;
-     }
+       }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)}
+
+    header nav{
+      display: none;
+            } ;
+     .productos article {
+        display: block;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .flex-contenedor-logo{
+        align-items: center;
+        display: flex;
+        height: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+        flex-grow: 0.5;
+        justify-content: flex-end;
     
+    
+    }
+
+    div.form {
+        font-size: 8px;
+        text-size-adjust: auto;
+        width: 49%; 
+        flex-grow: 100%;
+    }
+    
+    
+
         
 }
 
@@ -326,8 +327,11 @@ section .copyright-bloque {
     div.form {
     font-size: 8px;
     text-size-adjust: auto;
-    width: 49%; 
-    flex-grow: 100%;}
+    flex-grow: 100%;
+    width: 100%;
+    display: inline-flex;
+
+    }
 
 
 }
@@ -336,7 +340,7 @@ section .copyright-bloque {
 
         
 
-
+        
 @media (min-width: 361px){
 
       
@@ -356,7 +360,9 @@ section .copyright-bloque {
         width: 48%
     }
 
-    main section div.products{
+    
+
+     main section div.products{
         align-items: flex-start;
         display: flex;
         flex-direction: row;
@@ -388,7 +394,7 @@ section .copyright-bloque {
     header div.logo {
         width: 33%;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     
 
@@ -401,18 +407,6 @@ section .copyright-bloque {
 
     }
 
-    header .top-header {
-
-        display: flex;
-
-    }
-
-    header div.top-header p {
-        margin-top: 10px;
-        text-align: center;
-        display: flex;
-        width: 33%;
-    }
     
     div .compra {
         display: flex;
@@ -431,8 +425,9 @@ section .copyright-bloque {
         flex-grow: 0.5;
         justify-content: space-between}
 
-    header .menu-hamburguesa {
-        display: none
+    div.burger-menu {
+        display: none;
+        text-align: center;
     }
 
     header nav { 
@@ -452,6 +447,20 @@ section .copyright-bloque {
         flex-grow: 0.25;
         justify-content: space-around;
 
+    }
+
+    
+    header .top-header {
+
+        display: flex;
+
+    }
+
+    header div.top-header p {
+        margin-top: 10px;
+        text-align: center;
+        display: flex;
+        width: 33%;
     }
 
     .ofertas {
@@ -489,24 +498,17 @@ section .copyright-bloque {
 
 
 @media (max-width: 769px){
-    main section div.products article{
-        width: 22%;
-        
-    }
+
 }
 
 
 @media (min-width: 769px){
 
-    .productos{
-        display: flex;
-        flex-wrap: inherit;
-        margin: 10px auto;
-    }
+}
 
-    .productos article {
-        margin: 18px auto;
-        width: 24%;
+
+@media (min-width: 769px){
+
         
     }
-}
+
