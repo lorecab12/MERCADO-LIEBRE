@@ -15,9 +15,8 @@ h3{
 p{
     font-size: 12px;
 }
-div.top-header{
-    padding: 5%;
-}
+
+
 
 header{
     background-color: #EAC926;
@@ -73,6 +72,7 @@ header div.top-header p{
     margin-top: 10px;
     text-align: center;
     width: 100%;
+    display: flex;
     }
 
 header div p {
@@ -84,6 +84,10 @@ section.menu-hamburguesa{
     flex-direction: column;
     
 
+}
+
+div.top-header{
+    padding: 5%;
 }
 
 div.burger-menu{
@@ -103,75 +107,6 @@ div.burger-menu i{
     text-align: center;
 }
 
-.price{
-    flex-grow: 0.3;
-    font-size: 18px;
-}
-
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
-
-h3,
-.description{
-    color: #666;
-}
-
-.description{
-    display: none;
-    margin-top: 20px;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    margin: 0 auto;
-    width: 90%;
-}
-
-main section article{
-    background-color: #fff;
-    box-sizing: border-box;    
-    margin: 10px 0px;
-}
-
-main section article .flex-contenedor{
-    display: flex;
-    padding: 10px 0px;
-
-}
-
-main section article img{
-    box-sizing: border-box;
-    width: 100%;
-}
-
-main section article i,
-.discount{
-    color: #39b54a;
-
-}
-.discount{
-    flex-grow: 0.7;
-}
-
-main section article i.fas{
-    background-color: #FFF;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    
-}
-
 header .menu{
 
     display: flex;
@@ -187,24 +122,100 @@ header .navbar{
 
 
 
-main section h3{
-    margin: 20px 0px;
+h3,
+.description{
+    color: #666;
 }
 
-article div.main-article{
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    position: relative;
-    width: 93%;
+
+section.banner img{
+    width: 100%;
 }
 
-main section article .description{
-    display: inline-flex;
+main{
+    margin: 0 auto;
+    width: 90%;
 }
 
-.productos article {
-    display: block;
-    flex-wrap: wrap
+section .formulario-menu{
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    -webkit-border-radius: 0.375em;
+    border-radius: 0.375em;
+    -webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    display: -webkit-flex;
+    display: flex;
+    font-size: 16px;
+    min-height: 48px;
+}
+
+form {
+    display: grid;
+}
+
+section .formulario-usuario{
+    padding: 10px;
+}
+
+section p.formulario-usuario {
+    display: flex;
+    padding: 9px;
+    }
+    
+section p .nombre{
+    display: flex;
+    }
+section p .apellido{
+    display: flex;
+    }
+section p .mail{
+    display: flex;
+    }
+section p .usuario{
+    display: flex;
+    }
+section p .fecha-nacimiento{
+    display: flex;
+    }
+section p .domicilio{
+    display: flex;
+    }
+section p .perfil{
+    display: flex;
+    }
+section p .Intereses{
+    display: flex;
+    padding: 10px;
+    }   
+section p .foto{
+    display: flex;
+    padding: 10px;
+    }
+section p .contraseña{
+    display: flex;
+    padding: 10px;
+    }
+section p .confirmar-contraseña{
+    display: flex;
+    padding: 10px;
+    }
+section p .enviar-borrar{
+    display: flex;
+    padding: 10px;
+    }
+section .categorias-de-intereses {
+    padding: 10px;
+    display: flex;
+}
+
+footer {
+    background-color: #fff;
+    border: solid #ebebeb 5px;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
 }
 
 .fa-solid {  color: #1259c3};
@@ -226,13 +237,9 @@ section .copyright-bloque {
     padding-block: 20px
     }
 
-footer {
-    background-color: #fff;
-    border: solid #ebebeb 5px;
-    margin: auto;
-    padding: 60px;
-    text-align: center;
-}
+
+
+
 
 @media (min-width: 100px ){
     main section article .description{
@@ -284,6 +291,13 @@ footer {
 }
 
 @media (max-width: 360px){
+
+    header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    
     main section article .description{
        display: none;
        }
@@ -313,14 +327,19 @@ footer {
     div.form {
     font-size: 8px;
     text-size-adjust: auto;
-    width: 49%; 
     flex-grow: 100%;
+    width: 100%;
+    display: inline-flex;
+
+    }
+
+
 }
 
 
 
         
-}
+
         
 @media (min-width: 361px){
 
@@ -406,10 +425,10 @@ footer {
         flex-grow: 0.5;
         justify-content: space-between}
 
-    header .menu-hamburguesa {
-        display: none
+    div.burger-menu {
+        display: none;
+        text-align: center;
     }
-    
 
     header nav { 
         display: flex;
@@ -428,6 +447,20 @@ footer {
         flex-grow: 0.25;
         justify-content: space-around;
 
+    }
+
+    
+    header .top-header {
+
+        display: flex;
+
+    }
+
+    header div.top-header p {
+        margin-top: 10px;
+        text-align: center;
+        display: flex;
+        width: 33%;
     }
 
     .ofertas {
@@ -488,4 +521,17 @@ footer {
 }
 
 
+@media (min-width: 769px){
 
+    .productos{
+        display: flex;
+        flex-wrap: inherit;
+        margin: 10px auto;
+    }
+
+    .productos article {
+        margin: 18px auto;
+        width: 24%;
+        
+    }
+}
