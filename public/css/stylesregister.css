@@ -394,7 +394,7 @@ section .copyright-bloque {
     header div.logo {
         width: 33%;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     
 
