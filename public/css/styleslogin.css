@@ -124,7 +124,12 @@ header .navbar{
 
 h3,
 .description{
-    color: #666;
+    color: #ffff;
+
+}
+
+.description:hover {
+    color:#666
 }
 
 
