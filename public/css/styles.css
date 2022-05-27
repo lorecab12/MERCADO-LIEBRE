@@ -235,9 +235,6 @@ footer {
 }
 
 @media (min-width: 100px ){
-    main section article .description{
-       display: none;
-       }
 
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100)}
