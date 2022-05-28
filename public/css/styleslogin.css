@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0px;
     padding: 0px;
@@ -141,6 +142,9 @@ main{
     margin: 0 auto;
     width: 90%;
 }
+*/
+
+/* FORMULARIO LOGIN
 
 section .formulario-menu{
     -webkit-align-items: center;
@@ -214,7 +218,9 @@ section .categorias-de-intereses {
     padding: 10px;
     display: flex;
 }
+*/
 
+/*FOOTER*//*
 footer {
     background-color: #fff;
     border: solid #ebebeb 5px;
@@ -242,8 +248,10 @@ section .copyright-bloque {
     padding-block: 20px
     }
 
+*/
 
 
+/* medias queries
 
 
 @media (min-width: 100px ){
@@ -492,28 +500,4 @@ section .copyright-bloque {
 
 }
 
-@media (min-width: 500px) {
-    
-    a.submit {
-        display: flow-root;
-        flex-basis: max-content;
-    }
-    
-}
-
-
-@media (max-width: 769px){
-
-}
-
-
-@media (min-width: 769px){
-
-}
-
-
-@media (min-width: 769px){
-
-        
-    }
-
+*/

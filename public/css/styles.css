@@ -1,3 +1,4 @@
+/*header*/
 *{
     margin: 0px;
     padding: 0px;
@@ -21,6 +22,28 @@ div.top-header{
 
 header{
     background-color: #EAC926;
+}
+
+.description:hover {
+    color:#666
+}
+
+header .menu{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+header .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+
+section.banner img{
+    width: 100%;
 }
 
 header div.logo{
@@ -103,6 +126,8 @@ div.burger-menu i{
     text-align: center;
 }
 
+/*productos*/
+
 .price{
     flex-grow: 0.3;
     font-size: 18px;
@@ -122,10 +147,6 @@ h3,
 .description{
     display: none;
     margin-top: 20px;
-}
-
-section.banner img{
-    width: 100%;
 }
 
 main{
@@ -172,21 +193,6 @@ main section article i.fas{
     
 }
 
-header .menu{
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-header .navbar{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-
-
 main section h3{
     margin: 20px 0px;
 }
@@ -206,6 +212,8 @@ main section article .description{
     display: block;
     flex-wrap: wrap
 }
+
+/*footer*/
 
 .fa-solid {  color: #1259c3};
 
@@ -233,6 +241,87 @@ footer {
     padding: 60px;
     text-align: center;
 }
+
+
+/* login */
+section .formulario-menu{
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    -webkit-border-radius: 0.375em;
+    border-radius: 0.375em;
+    -webkit-box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    display: -webkit-flex;
+    display: flex;
+    font-size: 16px;
+    min-height: 48px;
+}
+
+form {
+    display: grid;
+}
+
+section .formulario-usuario{
+    padding: 10px;
+}
+
+section p.formulario-usuario {
+    display: flex;
+    padding: 9px;
+    }
+    
+section p .nombre{
+    display: flex;
+    }
+section p .apellido{
+    display: flex;
+    }
+section p .mail{
+    display: flex;
+    }
+section p .usuario{
+    display: flex;
+    }
+section p .fecha-nacimiento{
+    display: flex;
+    }
+section p .domicilio{
+    display: flex;
+    }
+section p .perfil{
+    display: flex;
+    }
+section p .Intereses{
+    display: flex;
+    padding: 10px;
+    }   
+section p .foto{
+    display: flex;
+    padding: 10px;
+    }
+section p .contraseña{
+    display: flex;
+    padding: 10px;
+    }
+section p .confirmar-contraseña{
+    display: flex;
+    padding: 10px;
+    }
+section p .enviar-borrar{
+    display: flex;
+    padding: 10px;
+    }
+section .categorias-de-intereses {
+    padding: 10px;
+    display: flex;
+}
+
+/*login*/
+
+
+
+/*medias queris*/
 
 @media (min-width: 100px ){
 
@@ -451,12 +540,16 @@ footer {
 
 }
 
+
+
 @media (min-width: 500px) {
     
     a.submit {
         display: flow-root;
         flex-basis: max-content;
     }
+
+    
     
 }
 
