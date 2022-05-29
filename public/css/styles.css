@@ -2,6 +2,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'roboto';
+    box-sizing: border-box;
 }
 
 body{
@@ -11,6 +13,7 @@ body{
 
 h3{
     font-size: 24px;
+    color: #666;
 }
 
 p{
@@ -25,7 +28,7 @@ header{
 }
 
 .description:hover {
-    color:#666
+    color:#666;
 }
 
 header .menu{
@@ -116,14 +119,18 @@ div.burger-menu{
 
 div.burger-menu i{
     background-color: #0044AA;
-    border-radius: 5px;
+    border-radius: 10 px;
     color: #FFF;
-    font-size: 20px;
-    height: 20px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px 3px; 
+    font-size: 18;
+    margin: auto;
+    padding: 15ppx;
     width: 40px;
+    max-width: 45px;
     text-align: center;
+    display: block;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
 /*productos*/
@@ -139,13 +146,12 @@ div.burger-menu i{
     font-weight: normal;
 }
 
-h3,
 .description{
-    color: #666;
+    color: #fff;
 }
 
 .description{
-    display: none;
+    display: block;
     margin-top: 20px;
 }
 
@@ -171,14 +177,27 @@ main section article img{
     width: 100%;
 }
 
-main section article i,
-.discount{
+main section article .discount{
     color: #39b54a;
 
+
+}
+
+.fas.fa-truck {
+    color: #39b54a;
+    transition: 
+        tranform 300ms;
+
+}
+
+.fas.fa-truck:hover {
+    color: #39b54a;
+    transform: rotate(-90deg);
 }
 .discount{
     flex-grow: 0.7;
 }
+
 
 main section article i.fas{
     background-color: #FFF;
@@ -190,8 +209,11 @@ main section article i.fas{
     position: absolute;
     right: 20px;
     top: -15px;
-    
+    width: 30px;
+    height: 30px;
 }
+    
+
 
 main section h3{
     margin: 20px 0px;
@@ -204,24 +226,25 @@ article div.main-article{
     width: 93%;
 }
 
-main section article .description{
-    display: inline-flex;
-}
-
 .productos article {
     display: block;
     flex-wrap: wrap
 }
 
+main section article:hover{
+    box-shadow: 3px 3px 10px rgb(0, 0, 0)}
+
 /*footer*/
 
-.fa-solid {  color: #1259c3};
 
+.icono-footer i{
+    color:#0044AA
 
-.fa-solid { color: #1259c3};
+}
+.icono-footer i:hover{
+    color: #39b54a;
+}
 
-
-.fa-solid { color: #1259c3};
 
 .copyright { 
     color: rgba(0, 0, 17, 0.432); font-size: 5;
@@ -240,11 +263,39 @@ footer {
     margin: auto;
     padding: 60px;
     text-align: center;
+   
+}
+.formulario-usuario {
+    margin: 20px;
 }
 
 
 /* login */
+
 section .formulario-menu{
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    -webkit-border-radius: 0.375em;
+    border-radius: 0.375em;
+
+    display: -webkit-flex;
+    display: flex;
+    font-size: 16px;
+    min-height: 48px;
+    margin: auto;
+    max-width: 800px;
+    padding: 20px 15px;
+}
+
+form {
+    display: grid;
+}
+
+section .formulario-usuario{
+    padding: 10px;
+    max-width: 800px;
+    padding: 20px 15px;
     -webkit-align-items: center;
     align-items: center;
     background-color: #fff;
@@ -256,14 +307,6 @@ section .formulario-menu{
     display: flex;
     font-size: 16px;
     min-height: 48px;
-}
-
-form {
-    display: grid;
-}
-
-section .formulario-usuario{
-    padding: 10px;
 }
 
 section p.formulario-usuario {
@@ -308,18 +351,34 @@ section p .confirmar-contraseña{
     display: flex;
     padding: 10px;
     }
-section p .enviar-borrar{
-    display: flex;
-    padding: 10px;
-    }
 section .categorias-de-intereses {
     padding: 10px;
     display: flex;
+    }
+
+.enviar-borrar {
+    margin-top: 20px;
+    background-color: #1259c3;
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 400ms;
 }
+.enviar-borrar:hover{
+    background-color: #0022AA;
 
+}
 /*login*/
-
-
+.formulario-login {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.contraseña {
+    width: 100%;
+}
 
 /*medias queris*/
 
@@ -574,6 +633,17 @@ section .categorias-de-intereses {
         margin: 18px auto;
         width: 24%;
         
+    }
+
+    footer {
+        background-color: #fff;
+        border: solid #ebebeb 5px;
+        margin: auto;
+        padding: 60px;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+       
     }
 }
 

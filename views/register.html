@@ -1,171 +1,184 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge , chrome=1">
-        <link href="https://fontawesome.com/icons?d=gallery&m=free" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-        <title>Bienvenidxs a MercadoLiebre</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+  
+    <head >
+
+      <meta charset="UTF-8">
+      <title> Mercado Liebre </title>
+      <meta http-equiv="X-UA-Compatible" content="IE-edge , chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+       <link href="https://fontawesome.com/icons?d=gallery&m=free" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    
     </head>
+
     <body>
-        <header>
-            <div class="top-header">
-                <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li class="ofertas"><a href="./ofertas.html"> Ofertas</a></li>
-                    <li class="tiendas"><a href="./tiendas.html"> Tiendas Oficiales</a></li>
-                    <li class="ventas"><a href="./ventas.html"> Vender</a></li>
-                    <li class="ayuda"><a href="./ayuda.html">Ayuda</a></li>
-                </ul>
-                <span>
-                </span>
-                <ul class="navbar">
-                        <li class="CreaTuCuenta"><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i> </a></li>
-                        <li class="Ingresa"><a href="/login"> Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                        <li class="MisCompras"><a href="./MisCompras.html"> Mis compras  <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
+         <header>
+
+                <div class="flex-contenedor-logo-tablet">
+                    <div class="flex-contenedor-logo">
+                        <div class="logo"> 
+                            <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                            </div>
+                
+                        <div class="form" action="#" method="GET">
+                                <span class="input">Buscar productos, marcas y más </span>
+                                <a class="submit"><i class="fa-solid fa-magnifying-glass"></i>       
+                        </div>
+                    </div>
+                        <div class="compra">
+                            <p ><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarejta de crédito</p>
+                        </div>
+                </div>           
+                <nav>
+                    <ul class="menu">
+                            <li class="ofertas"><a href="./ofertas.html">Ofertas</a></li>
+                            <li class="tiendas"><a href="./tiendas.html"> Tiendas Oficiales</a></li>
+                            <li class="ventas"><a href="./ventas.html"> Vender</a></li>
+                            <li class="ayuda"><a href="./ayuda.html">Ayuda</a></li>
+                    </ul>
+                    <span>
+                    </span>
+                    <ul class="navbar">
+                            <li class="CreaTuCuenta"><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i> </a></li>
+                            <li class="Ingresa"><a href="/login"> Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                            <li class="MisCompras"><a href="./MisCompras.html"> Mis compras  <i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </nav>
+                <section class="menu-hamburguesa">
+                    <div class="burger-menu">
+                        <i class="fa fa-bars burger"></i>
+                    </div>
+                </section>
         </header>
         <section class="formulario-usuario">
             <form action="/" method="POST">
-            <p class="nombre">
-                <!-- campo para el nombre -->
-                <label for="nombre"><h5>Nombre:</h5></label>
-                <input type="text" minlength="4" require name="nombre" id= "nombre" placeholder="introduce aqui tu nombre">
+                <p class="nombre">
+                    <!-- campo para el nombre -->
+                    <label for="nombre"><h5>Nombre:</h5></label>
+                    <input type="text" minlength="4" require name="nombre" id= "nombre" placeholder="introduce aqui tu nombre">
+                    
+                </p>
+
+                <p class="apellido">
+                    <!-- campo para el apellido -->
+                    <label for="apellido"><h5> Apellido: </h5></label>
+                    <input type="text" minlength="4" require name="apellido" id= "apellido" placeholder="introduce aqui tu apellido">
+                    
+                </p>
+                <p class="mail">
+                    <!-- campo para el mail -->
+                    <label for="email"><h5>e-mail: </h5></label>
+                    <input type="email" name="email" autocomplete="off" placeholder="introduce aqui tu email" value="" rows="1" class="andes-form-control__field" maxlength="120">
+                </p>
+                <p class="usuario">
+                    <!-- campo para el usuari@ -->
+                    <label for="usuario"><h5> Usuario:</h5></label>
+                    <input type="usuario" minlength="4" require name="usuario" id= "usuario" placeholder="crea un nombre de usuario">
+                </p>
                 
-            </p>
 
-            <p class="apellido">
-                <!-- campo para el apellido -->
-                <label for="apellido"><h5> Apellido: </h5></label>
-                <input type="text" minlength="4" require name="apellido" id= "apellido" placeholder="introduce aqui tu apellido">
+                <p class="fecha-nacimiento">
+                    
+                    <!-- campo para el fecha de nacimiento -->
+                    <h5>Fecha-de-nacimiento </h5>
+                    <input type="date" name="fecha" id= "fecha-de-nacimiento" required>
+
+                </p>
+                <p class="domicilio">
+                    <!-- campo para el domicilio -->
+                    <label for="domicilio"><h5>Domicilio: </h5></label>
+                    <input type="text" name="domicilio" id= "domicilio" required placeholder="Calle 123, Localidad, Partido, Provincia">
+
+                </p>
+                <p class="perfil">
+                    <!-- campo para el perfil de usuario (comprar o vender) -->
+
+                    <div class="perfil-de-usuario">
+                        <h5>Elegí tu perfil de usuario</h5>
+                        <br>
+                        <label for="comprar">Comprá</label>
+                        <input type="radio" name="medio" id= "comprar">
+                        <label for="vender">Vende</label>
+                        <input type="radio" name="medio" id= "vender">
+                        </br>
+
+                    </div>
+
+                </p>
+                <p class="Intereses">
+                    <!-- campo para categoria de interes -->
                 
-            </p>
-            <p class="mail">
-                <!-- campo para el mail -->
-                <label for="email"><h5>e-mail: </h5></label>
-                <input type="email" name="email" autocomplete="off" placeholder="introduce aqui tu email" value="" rows="1" class="andes-form-control__field" maxlength="120">
-            </p>
-            <p class="usuario">
-                <!-- campo para el usuari@ -->
-                <label for="usuario"><h5> Usuario:</h5></label>
-                <input type="usuario" minlength="4" require name="usuario" id= "usuario" placeholder="crea un nombre de usuario">
-            </p>
-            
-
-            <p class="fecha-nacimiento">
                 
-                <!-- campo para el fecha de nacimiento -->
-                <h5>Fecha-de-nacimiento </h5>
-                <input type="date" name="fecha" id= "fecha-de-nacimiento" required>
-
-            </p>
-            <p class="domicilio">
-                <!-- campo para el domicilio -->
-                <label for="domicilio"><h5>Domicilio: </h5></label>
-                <input type="text" name="domicilio" id= "domicilio" required placeholder="Calle 123, Localidad, Partido, Provincia">
-
-            </p>
-            <p class="perfil">
-                <!-- campo para el perfil de usuario (comprar o vender) -->
-
-                <div class="perfil-de-usuario">
-                    <h5>Elegí tu perfil de usuario</h5>
+                    <div class="categorias-de-interes">
+                        <h5>Intereses</h5>
                     <br>
-                    <label for="comprar">Comprá</label>
-                    <input type="radio" name="medio" id= "comprar">
-                    <label for="vender">Vende</label>
-                    <input type="radio" name="medio" id= "vender">
-                    </br>
+                        
+                        <label for="electro">Electro</label>
+                        <input type="checkbox" name="electro" id= "electro">
+                    </br> 
+                    <br>
+                        
+                        <label for="moda">Moda</label>
+                        <input type="checkbox" name="moda" id= "moda">
+                    </br> 
+                    <br>
+
+                        <label for="hogar">Hogar</label>
+                        <input type="checkbox" name="hogar" id= "hogar">
+                    </br> 
+                    <br>
+
+                        <label for="jugueteria">Jugueteria</label>
+                        <input type="checkbox" name="jugueteria" id= "jugueteria">
+                    </br> 
+                    <br>
+
+                        <label for="vida-sana">Vida sana</label>
+                        <input type="checkbox" name="vida-sana" id= "vida-sana">
+                    </br> 
 
                 </div>
 
-            </p>
-            <p class="Intereses">
-                <!-- campo para categoria de interes -->
-             
-              
-                <div class="categorias-de-interes">
-                    <h5>Intereses</h5>
-                <br>
-                    
-                    <label for="electro">Electro</label>
-                    <input type="checkbox" name="electro" id= "electro">
-                </br> 
-                <br>
-                    
-                    <label for="moda">Moda</label>
-                    <input type="checkbox" name="moda" id= "moda">
-                </br> 
-                <br>
+                </p>
+                <p class="foto">
+                    <!-- campo para foto de usuario -->
+                    <h5>Elegi tu foto de perfil</h5>
+                    <label> Selecciona una imagen para tu foto de perfil </label>
+                    <input type="file" name="avatar" accept=".jpg" multiple>
 
-                    <label for="hogar">Hogar</label>
-                    <input type="checkbox" name="hogar" id= "hogar">
-                </br> 
-                <br>
-
-                    <label for="jugueteria">Jugueteria</label>
-                    <input type="checkbox" name="jugueteria" id= "jugueteria">
-                </br> 
-                <br>
-
-                    <label for="vida-sana">Vida sana</label>
-                    <input type="checkbox" name="vida-sana" id= "vida-sana">
-                </br> 
-
-                </div>
-
-            </p>
-            <p class="foto">
-                <!-- campo para foto de usuario -->
-                <h5>Elegi tu foto de perfil</h5>
-                <label> Selecciona una imagen para tu foto de perfil </label>
-                <input type="file" name="avatar" accept=".jpg" multiple>
-
-            </p>
-           
-            <p class="contraseña">
-                <!-- campo para la contraseña -->
-                <div class="andes-form-control__bottom"><span class="andes-form-control__message">
-                    <label for="contraseña"><h5>Ingresá tu contraseña: </h5></label>
-                    <div class="andes-form-control__control">
-                        <input type="password" name="password" autocomplete="new-password" autocapitalize="none" spellcheck="false" autocorrect="off" class="andes-form-control__field not-autofilled is-autofilled" 
-                        maxlength="20" autofocus="" id="password" aria-invalid="false" placeholder="ingresá aqui tu contraseña"  aria-describedby="password-message">
-                    </div>
-                </div>
-               
-            </p>
-            <p class="confirmar-contraseña">
-                <!-- campo para confirmar la contraseña -->
-                <div class="andes-form-control__bottom"><span class="andes-form-control__message">
-                    <label for="contraseña"><h5>Reingresá tu contraseña: </h5></label>
-                    <div class="andes-form-control__control">
-                        <input type="password" name="password" autocomplete="new-password" autocapitalize="none" spellcheck="false" autocorrect="off" class="andes-form-control__field not-autofilled is-autofilled" 
-                        maxlength="20" autofocus="" id="password" aria-invalid="false" placeholder="Reingresá aqui tu contraseña"  aria-describedby="password-message">
-                    </div>
-                </div>
-            </p>
-            <p class="enviar-borrar">
-                <!-- campo para botton enviar -->
-                <button type="submit" value="Enviar"> Enviar </button>
-                <button type="reset" value="Borrar"> Borrar </button>
-            </p>
+                </p>
             
+                <p class="contraseña">
+                    <!-- campo para la contraseña -->
+                    <div class="contraseña"><span class="andes-form-control__message">
+                        <label for="contraseña"><h5>Ingresá tu contraseña: </h5></label>
+                        <div class="andes-form-control__control">
+                            <input class="contraseña" type="password" name="password" autocomplete="new-password" autocapitalize="none" spellcheck="false" autocorrect="off" class="andes-form-control__field not-autofilled is-autofilled" 
+                            maxlength="20" autofocus="" id="password" aria-invalid="false" placeholder="ingresá aqui tu contraseña"  aria-describedby="password-message">
+                        </div>
+                    </div>
+                
+                </p>
+                <p class="confirmar-contraseña">
+                    <!-- campo para confirmar la contraseña -->
+                    <div class="contraseña"><span class="andes-form-control__message">
+                        <label for="contraseña"><h5>Reingresá tu contraseña: </h5></label>
+                        <div class="andes-form-control__control">
+                            <input class="contraseña" type="password" name="password" autocomplete="new-password" autocapitalize="none" spellcheck="false" autocorrect="off" class="andes-form-control__field not-autofilled is-autofilled" 
+                            maxlength="20" autofocus="" id="password" aria-invalid="false" placeholder="Reingresá aqui tu contraseña"  aria-describedby="password-message">
+                        </div>
+                    </div>
+                </p>
+                <p class="Botones">
+                    <!-- campo para botton enviar -->
+                    <button type="submit" value="Enviar" class="enviar-borrar"> Enviar </button>
+                    <button type="reset" value="Borrar" class="enviar-borrar"> Borrar </button>
+                </p>
+                
             </form>
         </section>
         <footer >
@@ -173,8 +186,9 @@
             </section>
             <div aligne = "center"> 
             <ul>
+                <div class="icono-footer">
                 <i class="fa-solid fa-credit-card"></i>
-
+                </div>
                 <h3> Pagá con tarjeta o en efectivo </h3></a>
                 
                 Con Mercado Liebre Cash, tenés cuotas sin 
@@ -186,8 +200,9 @@
             <section>
             <div> 
                 <ul>
+                    <div class="icono-footer">
                     <i class="fa-solid fa-gift"></i>
-
+                    </div>
                     <h3>  Envío gratis desde $ 2.500  </h3></a>
                     
                     Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
@@ -198,8 +213,9 @@
             <section>
             <div> 
                 <ul>
+                    <div class="icono-footer">
                     <i class="fa-solid fa-user-shield"></i>
-
+                    </div>
                     <h3>  
                         Seguridad, de principio a fin </h3></a>
                     ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
